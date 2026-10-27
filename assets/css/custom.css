@@ -1,0 +1,36 @@
+:root {
+    --bg: #0A0A0A;
+    --surface: #141414;
+    --gold: #C9A227;
+    --gold-lt: #E5C158;
+    --red: #DC2626;
+    --text: #F5F0E6;
+    --muted: #A8A29E;
+    --border-gold: rgba(201,162,39,.2);
+}
+body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; }
+::selection { background: var(--gold); color: #000; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+input[type=range] { accent-color: var(--gold); }
+.gold-text { color: var(--gold); }
+.gold-border { border-color: var(--border-gold); }
+.gold-gradient {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-lt) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-gold {
+    background: var(--gold); color: #000; font-weight: 700;
+    transition: all .2s;
+}
+.btn-gold:hover { background: var(--gold-lt); }
+.card-hover { transition: transform .3s, box-shadow .3s; }
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -20px rgba(201,162,39,.3);
+}
+.carousel-slide { min-width: 100%; scroll-snap-align: start; }
+.carousel-container { scroll-snap-type: x mandatory; scrollbar-width: none; }
+.carousel-container::-webkit-scrollbar { display: none; }
