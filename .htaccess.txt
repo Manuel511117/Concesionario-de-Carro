@@ -1,0 +1,20 @@
+Options -Indexes
+ServerSignature Off
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+<Files "db.php">
+    Require all denied
+</Files>
+<Files "db.example.php">
+    Require all denied
+</Files>
+<Files ".gitignore">
+    Require all denied
+</Files>
+
+DirectoryIndex index.php
