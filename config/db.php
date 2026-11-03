@@ -1,12 +1,10 @@
 <?php
 require_once __DIR__ . '/constants.php';
 
-$cfg = require __DIR__ . '/db.php.local'; // o inline tus credenciales:
-
 $host   = 'localhost';
-$dbname = 'manuel1_apex';
-$user   = 'manuel1_apex';
-$pass   = '1234';
+$dbname = 'moises_apex';
+$user   = 'moises_apex';
+$pass   = 'Apex2026!';
 
 try {
     $pdo = new PDO(

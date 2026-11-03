@@ -1,4 +1,3 @@
--- Base de datos: manuel1_apex (crear en HestiaCP primero)
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
