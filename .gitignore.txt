@@ -1,4 +1,6 @@
 .vscode/sftp.json
 config/db.php
+config/db.php.local
 *.log
 .DS_Store
+sql/shema.sql
